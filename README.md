@@ -12,7 +12,7 @@ Mientras hacía el sketch, me imaginaba qué quería que vieran las personas al 
 Para esta sitio web, fui implementando distintas técnicas, a medida que avanzaba en el curso de Coderhouse. Empezando por box modeling, ya después posicionando los elementos con Flexbox y Grids, utilizando formularios, links, clases, CSS, llegando hasta las pseudoclases y pseudoelementos, las medidas absolutas y relativas, los media queries (es un sitio full responsive, no se rompe en ningún momento), y finalizando con la implementación de un menú hamburguesa en mi barra de navegación para dispositivos de 768px hacia abajo. 
 Para este sitio web no se implementó JavaScript, pero sí utilcé Bootstrap en la página Plantel, para poder mostrar de una manera más dinámica a los jugadores que conforman el equipo habitual de la Selección Argentina.
 Implementé técnicas de SEO básicas a modo de práctica, utilizando tanto opengraphs como keywords, meta description, favicon, modifiqué el title, entre otros.
-A medida que trabajaba, fui creando ramas secundarias en Git, más que nada para los cambios grandes que pudieran arruinar lo que tenía maquetado hasta el momento. Una vez hecho el merge de la main con las ramas secundarias, finalmente di push al proyecto, subiendolo a mi repositorio de GitHub.
+A medida que trabajaba, fui creando ramas secundarias en Git, más que nada para los cambios grandes que pudieran arruinar lo que tenía maquetado hasta el momento. Una vez hecho el merge de la main con las ramas secundarias, finalmente di push al proyecto, subiendolo a mi repositorio de GitHub. Posteriormente, enlacé mi GitHub a Netlify para poder mostrar este sitio y los demás sitios de una manera más formal.
 
 Copyright Marcos Cazzulino.
 
