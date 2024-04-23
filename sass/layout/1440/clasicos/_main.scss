@@ -40,6 +40,9 @@
         padding: 1.25rem 1.25rem 1.25rem 1.25rem;
         box-shadow: 2px 2px 2px map-get($fondos, sombra);
         overflow: auto;
+        strong{
+            color: map-get($texto, strong);
+        }
     }
     .pargUru{
         @extend .pargBr;
@@ -64,6 +67,7 @@
     }    
 }
 .rivTitle{
+    width: 100%;
     color: map-get($texto, textoPrimario);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
