@@ -1,10 +1,11 @@
-.indexLogo{
+.indexLogo {
     width: 100%;
     @include flex(column, center, center, none);
     display: flex;
     padding-bottom: 6.25rem;
-    padding-top: 10px;
-    img{
+    padding-top: .625rem;
+
+    img {
         padding-bottom: 3.75rem;
         padding-top: 3.75rem;
         width: 20%;
@@ -14,7 +15,8 @@
         animation-timing-function: linear;
         animation-duration: 3800ms;
     }
-    p{
+
+    p {
         font-size: 25px;
         font-style: italic;
         text-align: center;
@@ -23,7 +25,8 @@
         font-optical-sizing: auto;
         font-weight: 200;
     }
-    .refran{
+
+    .refran {
         font-family: "Nunito", sans-serif;
         font-weight: 550;
         font-style: normal;
@@ -31,8 +34,9 @@
         text-align: center;
     }
 }
-section{
-    .tituloIndex{
+
+section {
+    .tituloIndex {
         @include flex(column, center, center, none);
         display: flex;
         background-color: map-get($fondos, colorPrimario);
@@ -40,17 +44,20 @@ section{
         height: 140px;
         margin-bottom: 70px;
         font-weight: 600;
-        & span{
+
+        & span {
             color: map-get($texto, textoSecundario);
         }
-        .tit{
+
+        .tit {
             width: 100%;
             text-align: center;
             font-size: 40px;
         }
     }
-    .historicos{
-        h2{
+
+    .historicos {
+        h2 {
             color: map-get($texto, textoPrimario);
             font-size: 30px;
             text-align: center;
@@ -62,7 +69,8 @@ section{
             margin-bottom: -4.375rem;
         }
     }
-    .jugHist{
+
+    .jugHist {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 12.5rem);
@@ -70,7 +78,8 @@ section{
         width: 100%;
         justify-items: center;
         margin-bottom: 5rem;
-        .nombres{
+
+        .nombres {
             color: map-get($texto, textoPrimario);
             font-family: "Poppins", sans-serif;
             font-weight: 500;
@@ -78,7 +87,8 @@ section{
             text-transform: uppercase;
             font-size: 20px;
         }
-        .maradona{
+
+        .maradona {
             grid-column: 1/2;
             grid-row: 2/3;
             @include flex(column, center, center, .9375rem);
@@ -87,14 +97,16 @@ section{
             width: 13.125rem;
             height: 18.75rem;
             margin-left: 1.875rem;
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
                 border: 2px solid $bordeHistoricos;
                 cursor: pointer;
                 transition: filter 1s;
             }
-            p{
+
+            p {
                 width: 12.5rem;
                 height: 16.5625rem;
                 margin-bottom: 2.8125rem;
@@ -108,16 +120,19 @@ section{
                 -webkit-animation: desaparicion 500ms linear both;
                 animation: desaparicion 500ms linear both;
             }
-            &:hover p{
+
+            &:hover p {
                 -webkit-animation: textaparicion 500ms linear both;
                 animation: textaparicion 500ms linear both;
             }
-            &:hover img{
+
+            &:hover img {
                 filter: brightness(25%);
                 transition: filter .5s
             }
         }
-        .messi{
+
+        .messi {
             @extend .maradona;
             grid-column: 2/3;
             grid-row: 2/3;
@@ -125,12 +140,14 @@ section{
             height: 30rem;
             margin-right: .4375rem;
             margin-left: 0;
-            p{
+
+            p {
                 height: 24.375rem;
                 margin-bottom: 3.125rem;
             }
         }
-        .diStefano{
+
+        .diStefano {
             @extend .maradona;
             grid-column: 3/4;
             grid-row: 2/3;
@@ -141,10 +158,12 @@ section{
         }
     }
 }
-.palmaresIndex{
+
+.palmaresIndex {
     width: 100%;
     padding-bottom: 4.6875rem;
-    h2{
+
+    h2 {
         color: map-get($texto, textoPrimario);
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -152,6 +171,17 @@ section{
         font-size: 35px;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: .9375rem;
+    }
+
+    div {
+        @include flex(column, center, center, none);
+        width: 100%;
+        height: 12.5rem;
+        background-color: map-get($fondos, colorPrimario);
+
+        img {
+            height: 100%;
+        }
     }
 }
