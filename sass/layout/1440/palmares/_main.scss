@@ -1,4 +1,6 @@
 section{
+    @include flex(column, center, center, 1.875rem);
+    display: flex;
     .palmaresIzquierda{
         @include flex(row, flex-start, center, none);
         display: flex;

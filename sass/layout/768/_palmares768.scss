@@ -1,68 +1,59 @@
 section{
     .palmaresIzquierda{
-        height: 9.375rem;
-        background-image: linear-gradient(90deg, $degDorado, $degNegro 90%);
+        @include flex(column, center, center, none);
+        display: flex;
+        height: 18.75rem;
+        background-image: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(172,159,57,1) 52%, rgba(0,0,0,1) 99%);
+        box-shadow: 0 0 .625rem rgba(172,159,57,1);
         .imagenMundial{
-            padding-right: 3.125rem;
+            margin-top: -1.5rem;
+            height: 7.5rem;
+            padding: 0 0 .9375rem 0;
+            border-right: none;
         }
         .munNum{
-            margin: 6.25rem 4.6875rem 0 -5rem;
+            margin: -3.125rem -1.5625rem .9375rem 0;
             width: 2.1875rem;
             height: 2.1875rem;
-        }
-        .imagenFinalissima{
-            padding: 1.25rem 2.5rem 1.25rem 2.8125rem;
-        }
-        .numFin{
-            margin: 5.625rem 4.5rem 0 -4.875rem;
-            width: 2.1875rem;
-            height: 2.1875rem;
-        }
-        .imagenPan{
-            padding: 1.25rem 2.8125rem 1.25rem 3.125rem;
         }
         .numPan{
-            margin: 5.625rem 4.25rem 0 -4.6875rem;
-            width: 2.1875rem;
-            height: 2.1875rem;
+            margin-top: -45px;
         }
         div{
             @include flex(none, flex-start, none, none);
             height: auto;
+            width: 80%;
+            box-shadow: 0 0 .625rem white;
+            margin-bottom: -1.875rem;
             p{
-                height: 7.5rem;
+                height: 8.75rem;
             }
         }
     }
     .palmaresDerecha{
-        height: 9.375rem;
-        background-image: linear-gradient(270deg, $degDorado, $degNegro 90%);
-        .imagenConf{
-            padding: 1.25rem 4.375rem 1.25rem 4.25rem;
+        height: 19.375rem;
+        .imagenCa{
+            margin: -1.875rem 0 0 0;
+            border-left: none;
+        }
+        .numCa{
+            font-size: 1.25rem;
+            margin: -2.8125rem -1.875rem 15px 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: .375rem 0 0 0;
         }
         .numConf{
-            margin: 5.625rem -4.875rem 0 4.0625rem;
-            background-color: $fondoNum;
-            width: 2.1875rem;
-            height: 2.1875rem;
+            margin-top: -2.8125rem
         }
         div{
             @include flex(none, flex-end, none, none);
             height: auto;
             overflow-x: scroll;
             p{
-                height: 7.5rem;
+                height: 8.75rem;
+                width: 34.375rem;
             }
-        }
-        .imagenCa{
-            padding: 1.25rem 3.125rem 1.25rem 3.125rem;
-        }
-        .numCa{
-            font-size: 20px;
-            margin: 5rem -5rem 0 2.8125rem;
-            width: 2.8125rem;
-            height: 2.8125rem;
-            padding: .5rem .3125rem 0 .3125rem;
         }
     }
 }
