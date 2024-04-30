@@ -502,7 +502,8 @@ section {
   justify-content: none;
   align-items: none;
   gap: 3.125rem;
-  display: flex; }
+  display: flex;
+  width: 100%; }
   .contactPage .contact p, .contactPage .contact h1 span::selection, h1 .contactPage .contact span::selection, .contactPage .contact h1::selection, .contactPage .contact h2::selection, .contactPage .contact h3::selection, .contactPage .contact .tituloColor::selection, .contactPage .contact .refran::selection, .contactPage .contact a::selection {
     color: white;
     font-family: "Poppins", sans-serif;

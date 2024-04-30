@@ -1,6 +1,7 @@
 .contactPage{
     @include flex(column, none, none, 3.125rem);
     display: flex;
+    width: 100%;
     .contact{
         p{
             color: map-get($texto, textoPrimario);
